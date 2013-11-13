@@ -81,6 +81,7 @@ public class BookmarksActivity extends TabActivity implements MenuItem.OnMenuIte
 		LayoutInflater.from(this).inflate(R.layout.bookmarks, host.getTabContentView(), true);
 
 		myBook = SerializerUtil.deserializeBook(getIntent().getStringExtra(FBReader.BOOK_KEY));
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	private class Initializer implements Runnable {

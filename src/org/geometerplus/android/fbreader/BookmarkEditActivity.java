@@ -59,5 +59,6 @@ public class BookmarkEditActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		final SimpleContainer container = new SimpleContainer(this);
 		setContentView(container);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 }

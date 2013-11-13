@@ -74,6 +74,7 @@ public class BookInfoActivity extends Activity implements IBookCollection.Listen
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.book_info);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

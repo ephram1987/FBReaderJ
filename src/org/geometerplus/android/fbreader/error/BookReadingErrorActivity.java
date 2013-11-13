@@ -37,6 +37,7 @@ public class BookReadingErrorActivity extends Activity implements ErrorKeys {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		setContentView(R.layout.error_book_reading);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		final ZLResource resource = ZLResource.resource("error").getResource("bookReading");
 		setTitle(resource.getResource("title").getValue());

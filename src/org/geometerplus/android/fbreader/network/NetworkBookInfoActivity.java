@@ -70,6 +70,7 @@ public class NetworkBookInfoActivity extends Activity implements NetworkLibrary.
 
 		myMainView = getLayoutInflater().inflate(R.layout.network_book, null, false);
 		setContentView(myMainView);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

@@ -42,6 +42,7 @@ public class FixBooksDirectoryActivity extends Activity {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		setContentView(R.layout.books_directory_fix);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		final ZLResource resource = ZLResource.resource("crash").getResource("fixBooksDirectory");
 		final ZLResource buttonResource = ZLResource.resource("dialog").getResource("button");

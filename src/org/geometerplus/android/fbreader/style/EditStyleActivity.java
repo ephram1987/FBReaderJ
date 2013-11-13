@@ -64,6 +64,7 @@ public class EditStyleActivity extends PreferenceActivity {
 				screen.addPreference(myBgColorPreference);
 			}
 		});
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

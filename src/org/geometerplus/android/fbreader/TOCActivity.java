@@ -60,6 +60,7 @@ public class TOCActivity extends ListActivity {
 		TOCTree treeToSelect = fbreader.getCurrentTOCElement();
 		myAdapter.selectItem(treeToSelect);
 		mySelectedItem = treeToSelect;
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

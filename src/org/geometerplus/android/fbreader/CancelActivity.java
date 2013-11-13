@@ -56,6 +56,7 @@ public class CancelActivity extends ListActivity {
 				getListView().setOnItemClickListener(adapter);
 			}
 		});
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

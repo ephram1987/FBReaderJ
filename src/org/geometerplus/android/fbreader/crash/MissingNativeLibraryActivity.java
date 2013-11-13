@@ -34,6 +34,7 @@ public class MissingNativeLibraryActivity extends Activity {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		setContentView(R.layout.missing_native_library);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		final ZLResource resource = ZLResource.resource("crash").getResource("missingNativeLibrary");
 		final ZLResource buttonResource = ZLResource.resource("dialog").getResource("button");

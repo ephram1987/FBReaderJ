@@ -103,6 +103,7 @@ public class BuyBooksActivity extends Activity implements NetworkLibrary.ChangeL
 		}
 
 		setContentView(R.layout.buy_book);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		try {
 			if (!mgr.isAuthorised(true)) {

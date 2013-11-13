@@ -106,6 +106,7 @@ public class AuthenticationActivity extends Activity {
 		super.onCreate(icicle);
 		Thread.setDefaultUncaughtExceptionHandler(new org.geometerplus.zlibrary.ui.android.library.UncaughtExceptionHandler(this));
 		setContentView(R.layout.authentication);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		final Intent intent = getIntent();
 

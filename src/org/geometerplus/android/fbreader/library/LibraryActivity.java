@@ -71,6 +71,7 @@ public class LibraryActivity extends TreeActivity<LibraryTree> implements MenuIt
 				setProgressBarIndeterminateVisibility(!myRootTree.Collection.status().IsCompleted);
 			}
 		});
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

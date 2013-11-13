@@ -87,6 +87,7 @@ public abstract class NetworkLibraryActivity extends TreeActivity<NetworkTree> i
 		}
 
 		getListView().setOnScrollListener(this);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

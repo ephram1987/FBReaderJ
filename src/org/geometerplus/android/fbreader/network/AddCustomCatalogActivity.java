@@ -56,6 +56,7 @@ public class AddCustomCatalogActivity extends Activity {
 		AuthenticationActivity.initCredentialsCreator(this);
 
 		setContentView(R.layout.add_custom_catalog);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		myResource = ZLResource.resource("dialog").getResource("CustomCatalogDialog");
 
@@ -125,6 +126,7 @@ public class AddCustomCatalogActivity extends Activity {
 		} else {
 			setExtraFieldsVisibility(false);
 		}
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	private void onOkButton() {

@@ -53,6 +53,7 @@ public class StyleListActivity extends ListActivity implements IBookCollection.L
 	protected void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

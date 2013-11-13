@@ -48,6 +48,7 @@ public class PluginListActivity extends ListActivity {
 		final PluginListAdapter adapter = new PluginListAdapter();
 		setListAdapter(adapter);
 		getListView().setOnItemClickListener(adapter);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	private static class Plugin {

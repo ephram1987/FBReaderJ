@@ -52,6 +52,7 @@ abstract class MenuActivity extends ListActivity implements AdapterView.OnItemCl
 
 		setListAdapter(new ActionListAdapter());
 		getListView().setOnItemClickListener(this);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	public final void onItemClick(AdapterView<?> parent, View view, int position, long id) {

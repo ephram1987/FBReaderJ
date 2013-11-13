@@ -132,6 +132,7 @@ abstract class ZLPreferenceActivity extends android.preference.PreferenceActivit
 		init(intent);
 		final Screen screen = myScreenMap.get(intent.getStringExtra(SCREEN_KEY));
 		setPreferenceScreen(screen != null ? screen.myScreen : myScreen);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override

@@ -44,6 +44,7 @@ public class TipsActivity extends Activity {
 		final boolean doInitialize = INITIALIZE_ACTION.equals(getIntent().getAction());
 
 		setContentView(R.layout.tip);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 		final ZLResource dialogResource = ZLResource.resource("dialog");
 		final ZLResource resource = dialogResource.getResource("tips");
 		final ZLResource buttonResource = dialogResource.getResource("button");

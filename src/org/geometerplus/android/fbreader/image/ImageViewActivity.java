@@ -59,6 +59,7 @@ public class ImageViewActivity extends Activity {
 		);
 
 		setContentView(new ImageView());
+		com.tomoon.sdk.Emulator.configure(getWindow());
 
 		final Intent intent = getIntent();
 

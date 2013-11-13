@@ -44,6 +44,7 @@ public class CatalogManagerActivity extends ListActivity {
 	protected void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		setContentView(R.layout.catalog_manager_view);
+		com.tomoon.sdk.Emulator.configure(getWindow());
 	}
 
 	@Override
